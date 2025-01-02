@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import 'animate.css';
 import star from '../assets/star.png';
 import Footer from './Footer';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -40,9 +40,9 @@ import 'swiper/css/navigation';
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 const Landing= () => {
   return (
-    <div className='bg-white text-black h-screen'>
+    <div className=' bg-white text-black h-screen'>
     {/* main section */}
-    <div className='flex justify-around gap-4 px-10 pt-14 py-16 bg-blue-100 max-md:flex-col max-md:pt-4 max-md:px-1 max-md:w-[100%]'>
+    <div className='animate__animated animate__backInUp flex justify-around gap-4 px-10 pt-14 py-16 bg-blue-100 max-md:flex-col max-md:pt-4 max-md:px-1 max-md:w-[100%]'>
      <div className='w-1/2 pt-10 max-md:pt-4 max-md:w-[100%] max-md:px-2'>
         <h2 className='text-3xl font-bold max-md:text-xl'>Welcome to <span className=' text-orange-600'>  KarunyaLab</span> Best  in the Town</h2>
         <p className='text-xl py-2 max-md:text-[16px]'>A medical laboratory is the backbone of healthcare diagnostics, research, and treatment planning.We are a technology-focused, multi-dimensional pharmaceutical company having state-of-the-art manufacturing capabilities in diverse therapeutic areas such as Cardiology, Diabetology, Pain Management, Dermatology, <span className='max-md:hidden'> It serves as a hub for analyzing biological samples, identifying diseases, and ensuring accurate and timely test results that guide clinical decisions. Medical labs are essential for advancing medical science, developing innovative treatments, and improving patient outcomes.</span></p>
@@ -87,10 +87,6 @@ const Landing= () => {
       <p className='text-2xl py-2'>
       With advanced diagnostic tools and empathetic care, we ensure thorough assessments for your health needs.
       </p>
-      {/* <p>
-        Special Offer – Limited Time Only!To make healthcare accessible for everyone, we’re offering discounted rates on our most popular testing services. This is your chance to prioritize your health without compromising your budget.Take the first step toward a healthier tomorrow. Visit Meducak Kab today or book your tests online to avail yourself of this limited-time offer.<br></br>
-        
-        </p> */}
         
         <h2 className='text-xl '> Available Testing Services:</h2>
         <ul className='text-xl px-4'>
@@ -107,8 +103,8 @@ const Landing= () => {
       </div>
     </div>
   
-    {/* reviews and rating */}
-    <div className=' bg-blue-100 p-2'>
+    {/* features */}
+    <div className='animate__animated animate__bounce bg-blue-100 p-2 hover:animate__bounce'>
      <div className='flex justify-around bg-blue-500 m-4 rounded-xl py-10 max-md:flex-col max-md:justify-center max-md:items-center max-md:gap-4'>
      <div className='w-36 h-24 px-10 py-4 bg-blue-100 shadow-md rounded-md'>
         <h2 className='text-center'>20<sup>+</sup><br></br> experts</h2>
@@ -248,6 +244,122 @@ const Landing= () => {
      {/* reviews section */}
      <div className='bg-blue-100'>
      <h2 className='text-3xl text-orange-600 font-bold text-center mx-4 py-14'>Our Client Reviews</h2>
+     <div className='bg-blue-600 rounded-t-3xl py-6'>
+     <Swiper 
+         modules={[Autoplay]}
+        className="mySwiper"
+        autoplay={{
+          delay: 3500,
+          disableOnInteraction: false,
+        }}>
+     <SwiperSlide>
+     <div className='flex gap-4 bg-blue-100 rounded-3xl mx-8 my-4'>
+     <div className='w-1/3 flex-col shadow-lg border-2 border-solid rounded-3xl border-x-slate-200 p-8 max-md:hidden'>
+          <div className='flex justify-center align-middle' id='avatar'>
+          <img src='https://www.pngarts.com/files/5/Avatar-Face-Transparent-Background-PNG.png' className='w-28 h-20 rounded-full bg-blue-200'></img>
+          </div>
+          <h2 className='text-xl text-center font-semibold '>Logan Paul</h2>
+          <p className='text-[16px] text-center'>"I truly appreciate the clear communication and the timely follow-up on my test results. I highly recommend this lab for anyone looking for reliable and high-quality medical testing services!"</p>
+            <div className='flex justify-center items-center gap-2'>
+              <img src={star} className='w-4 h-4'></img>
+              <img src={star}  className='w-4 h-4' ></img>
+             <img src={star}  className='w-4 h-4' ></img>
+             <img src={star}  className='w-4 h-4' ></img>
+
+              </div>
+             
+          </div>
+          <div className='w-1/3 flex-col shadow-lg border-2 rounded-3xl border-solid border-x-slate-200 p-8 max-md:w-[100%]'>
+          <div className='flex justify-center align-middle' id='avatar'>
+          <img src='https://www.pngarts.com/files/5/Avatar-Face-Transparent-Background-PNG.png' className='w-28 h-20 rounded-full bg-blue-200'></img>
+          </div>
+          <h2 className='text-xl text-center font-semibold'>Logan Paul</h2>
+          <p className='text-[16px] text-center'>"I've had an excellent experience at this medical lab! The staff are incredibly friendly, professional, and attentive. The lab environment is clean, well-organized, and welcoming, making me feel at ease during my visit."</p>
+            <div className='flex justify-center items-center gap-2' id='star'>
+              <img src={star} className='w-4 h-4' ></img>
+              <img src={star} className='w-4 h-4' ></img>
+             <img src={star} className='w-4 h-4' ></img>
+             <img src={star} className='w-4 h-4' ></img>
+
+              </div>
+             
+          </div>
+          <div className='w-1/3 flex-col shadow-lg rounded-3xl border-2 border-solid border-x-slate-200 p-8 max-md:hidden'>
+          <div className='flex justify-center align-middle' id='avatar'>
+          <img src='https://www.pngarts.com/files/5/Avatar-Face-Transparent-Background-PNG.png' className='w-28 h-20 rounded-full bg-blue-200'></img>
+          </div>
+          <h2 className='text-xl text-center font-semibold'>Logan Paul</h2>
+          <p className='text-[16px] text-center'>"I was really impressed with the professionalism and care shown by the staff at this medical lab. They made the entire testing process quick and comfortable, and the lab was very clean and well-maintained. The results were delivered ahead of schedule, which was a nice surprise! Highly recommend!" </p>
+            <div className='flex justify-center items-center gap-2' id='star'>
+              <img src={star} className='w-4 h-4' ></img>
+              <img src={star} className='w-4 h-4' ></img>
+             <img src={star} className='w-4 h-4' ></img>
+             <img src={star} className='w-4 h-4' ></img>
+
+              </div>
+             
+          </div>
+     </div>
+       
+     </SwiperSlide>
+     <SwiperSlide>
+     <div className='flex gap-4 bg-blue-100 rounded-3xl mx-4'>
+     <div className='w-1/3 flex-col shadow-lg rounded-3xl border-2 border-solid border-x-slate-200 p-8 max-md:w-[100%]'>
+          <div className='flex justify-center align-middle' id='avatar'>
+          <img src='https://www.pngarts.com/files/5/Avatar-Face-Transparent-Background-PNG.png' className='w-28 h-20 rounded-full bg-blue-200'></img>
+          </div>
+          <h2 className='text-xl text-center font-semibold '>Logan Paul</h2>
+          <p className='text-[16px] text-center'>"Fantastic experience! The medical lab staff were courteous and explained every step of the testing process. The results were accurate and arrived very quickly. I will definitely return for any future lab tests. Truly outstanding service!"</p>
+            <div className='flex justify-center items-center gap-2'>
+              <img src={star} className='w-4 h-4'></img>
+              <img src={star}  className='w-4 h-4' ></img>
+             <img src={star}  className='w-4 h-4' ></img>
+             <img src={star}  className='w-4 h-4' ></img>
+
+              </div>
+             
+          </div>
+          <div className='w-1/3 flex-col shadow-lg border-2 border-solid border-x-slate-200 p-8 max-md:w-[100%] max-md:hidden'>
+          <div className='flex justify-center align-middle' id='avatar'>
+          <img src='https://www.pngarts.com/files/5/Avatar-Face-Transparent-Background-PNG.png' className='w-28 h-20 rounded-full bg-blue-200'></img>
+          </div>
+          <h2 className='text-xl text-center font-semibold'>Logan Paul</h2>
+          <p className='text-[16px] text-center'>"Such a smooth experience! The team at this medical lab was efficient and kind, making sure I felt comfortable during my visit. They took the time to explain everything in detail, and the results were available much sooner than I expected. I’m very pleased with my visit."
+
+           </p>
+            <div className='flex justify-center items-center gap-2' id='star'>
+              <img src={star} className='w-4 h-4' ></img>
+              <img src={star} className='w-4 h-4' ></img>
+             <img src={star} className='w-4 h-4' ></img>
+             <img src={star} className='w-4 h-4' ></img>
+
+              </div>
+             
+          </div>
+          <div className='w-1/3 flex-col shadow-lg border-2 rounded-3xl border-solid border-x-slate-200 p-8 max-md:hidden'>
+          <div className='flex justify-center align-middle' id='avatar'>
+          <img src='https://www.pngarts.com/files/5/Avatar-Face-Transparent-Background-PNG.png' className='w-28 h-20 rounded-full bg-blue-200'></img>
+          </div>
+          <h2 className='text-xl text-center font-semibold'>Logan Paul</h2>
+          <p className='text-[16px] text-center'>"I’ve been to several labs before, but this one is by far the best. The staff is knowledgeable and approachable, and the testing process was quick and hassle-free. I received my results promptly and with clear explanations. Highly recommend this lab to anyone looking for top-notch service!" </p>
+            <div className='flex justify-center items-center gap-2' id='star'>
+              <img src={star} className='w-4 h-4' ></img>
+              <img src={star} className='w-4 h-4' ></img>
+             <img src={star} className='w-4 h-4' ></img>
+             <img src={star} className='w-4 h-4' ></img>
+
+              </div>
+             
+          </div>
+     </div>
+       
+     </SwiperSlide>
+     
+      
+
+
+     </Swiper>
+     </div>
      </div>
      
      <Footer/>            
