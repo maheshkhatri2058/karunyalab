@@ -55,7 +55,7 @@ const Landing= () => {
     </div>
     {/* second section */}
     <div className='flex justify-between bg-blue-100 px-20 py-8 gap-12 max-md:flex-col max-md:px-2'>
-    <div className='flex px-8 bg-blue-200 max-md:px-1 max-md:h-[450px]' id='swip1'>
+    <div className='flex px-8 bg-blue-200 max-md:px-1 max-md:h-[450px] max-md:hidden' id='swip1'>
     <Swiper
         effect={'cards'}
         grabCursor={true}

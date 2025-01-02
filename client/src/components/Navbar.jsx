@@ -3,6 +3,14 @@ import { Link } from 'react-router-dom'
 import logo from '../assets/logo.png'
 
 const Navbar = () => {
+  function close()
+  {
+    document.getElementById("navs").style.display = "none";
+  }
+  function show()
+  {
+    document.getElementById("navs").style.display = "block";
+  }
   return (
     <div>
        {/* na section */}
@@ -33,7 +41,25 @@ const Navbar = () => {
 
 
       </div>
+      <div className='hidden  pt-4 max-md:flex'><button onClick={show}><i className="ri-menu-line text-xl"></i></button></div>
+     
     </nav>
+    <div className='hidden max-md:items-center px-[40%] bg-slate-100 max-md:hidden absolute left-0 right-0' id='navs'>
+       <div className='mx-auto my-2  text-black'>
+       <div className='py-2 px-4'><button onClick={close}><i class="ri-close-large-line"></i></button></div>
+       <div className='py-2'>
+        <Link to='/' className='hover:text-blue-600 py-2'>HOME</Link>
+        </div>        
+        <div className='py-2' >
+        <Link to='/contact' className='hover:text-blue-600 py-2'>CONTACT</Link>
+        </div>
+        <div className='py-2'>
+        <a href='#services'  className='hover:text-blue-600 py-2'>SERVICES</a>
+           
+        </div>
+       </div>
+
+      </div>
     </div>
   )
 }
