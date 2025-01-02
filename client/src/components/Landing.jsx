@@ -42,7 +42,7 @@ const Landing= () => {
   return (
     <div className=' bg-white text-black h-screen'>
     {/* main section */}
-    <div className='animate__animated animate__backInUp flex justify-around gap-4 px-10 pt-14 py-16 bg-blue-100 max-md:flex-col max-md:pt-4 max-md:px-1 max-md:w-[100%]'>
+    <div className=' flex justify-around gap-4 px-10 pt-14 py-16 bg-blue-100 max-md:flex-col max-md:pt-4 max-md:px-1 max-md:w-[100%]'>
      <div className='w-1/2 pt-10 max-md:pt-4 max-md:w-[100%] max-md:px-2'>
         <h2 className='text-3xl font-bold max-md:text-xl'>Welcome to <span className=' text-orange-600'>  KarunyaLab</span> Best  in the Town</h2>
         <p className='text-xl py-2 max-md:text-[16px]'>A medical laboratory is the backbone of healthcare diagnostics, research, and treatment planning.We are a technology-focused, multi-dimensional pharmaceutical company having state-of-the-art manufacturing capabilities in diverse therapeutic areas such as Cardiology, Diabetology, Pain Management, Dermatology, <span className='max-md:hidden'> It serves as a hub for analyzing biological samples, identifying diseases, and ensuring accurate and timely test results that guide clinical decisions. Medical labs are essential for advancing medical science, developing innovative treatments, and improving patient outcomes.</span></p>
@@ -239,6 +239,7 @@ const Landing= () => {
     </div>
 
     </div>
+ 
 
     
      {/* reviews section */}
@@ -361,8 +362,48 @@ const Landing= () => {
      </Swiper>
      </div>
      </div>
+        {/* contact sections  */}
+    <div className='bg-stone-200 py-4' id='contact'>
+       <h2 className='text-center text-3xl font-bold text-orange-700'>You can rich us by following!!</h2>
+       <div className='flex justify-around gap-8 h-full  pt-20 max-md:flex-col max-md:gap-2'>
+           <div className='max-md:w-80 max-md:px-2'>   
+            <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3907.481880528203!2d76.166669!3d11.660222000000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba60be8a73e0f55%3A0x8d91412f104026be!2sKarunya%20Medical%20Lab!5e0!3m2!1sen!2sin!4v1735721188124!5m2!1sen!2sin" 
+           width="750"
+           height="450"
+          style={{ border: 0 }}
+          allowFullScreen=""
+          loading="lazy"
+          referrerPolicy="no-referrer-when-downgrade"
+          title="Location Map"
+          className='max-md:w-[350px] max-md:h-80' >
+
+          </iframe>
+       </div>
+       <div className='flex-col space-y-4 px-4 max-md:w-full'>
+       <h2 className='text-2xl font-bold text-black'>Send Your Message</h2>
+       <form action='' className='space-y-4'>
+         <div>
+         <input type='text' placeholder='Enter Your Name' className='w-96 px-2 h-12 outline-none rounded-lg bg-slate-100 border-[1.2px] border-solid border-black max-md:w-80'/>
+         </div>
+         <div>
+         <input type='text' placeholder='Enter Your Phone no' className='w-96 px-2 h-12 outline-none rounded-lg bg-slate-100 border-[1.2px] border-solid border-black max-md:w-80'/>
+         </div>
+         <div>
+         <input type='email' placeholder='Email' className='w-96 h-12 px-2 outline-none rounded-lg bg-slate-100 border-[1.2px] border-solid border-black max-md:w-80' />
+         
+         </div>
+         <div> 
+         <textarea placeholder='Message' rows='5' className='w-96 px-2 outline-none rounded-lg bg-slate-100 border-[1.2px] border-solid border-black max-md:w-80' />
+          
+         </div>
+           <button type='submit' className='btn btn-secondary w-96 max-md:w-80'>Send</button>
+           </form>
+       </div>
+         </div>
+       </div>
+       <Footer/>
      
-     <Footer/>            
     </div>
   )
 }
