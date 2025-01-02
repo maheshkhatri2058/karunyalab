@@ -6,7 +6,7 @@ const Navbar = () => {
   return (
     <div>
        {/* na section */}
-      <div className='flex justify-between px-6 py-2 bg-slate-800 relative text-white'>
+      <div className='flex justify-between px-6 py-2 bg-slate-800 relative text-white max-md:hidden'>
       <div className='flex gap-4'>
         <h1><i class="ri-mail-line"></i>karunyalab@gmail.com</h1>
         <h2><i class="ri-phone-fill"></i>+91 9995154704/9747054704</h2>
@@ -24,7 +24,7 @@ const Navbar = () => {
       <div className='p-0'>
           <img src={logo} className='w-44 border-black'></img>
       </div>
-      <div className='flex gap-6 pr-14 py-6 text-xl font-normal '> 
+      <div className='flex gap-6 pr-14 py-6 text-xl font-normal max-md:hidden '> 
         <Link to='/' className='hover:text-blue-600 py-2'>HOME</Link>
         <Link to='/contact' className='hover:text-blue-600 py-2'>CONTACT</Link>
         <a href='#services'  className='hover:text-blue-600 py-2'S>SERVICES</a>
