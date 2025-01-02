@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body{
+    background-color: #f0f0f0;
+}
+#swip1 .swiper {
+    width: 450px;
+    height: 550px;
+   
+  }
+  
+ #swip1 .swiper-slide {
+    border-radius: 18px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff;
+  }
+  
+ ul{
+    list-style: circle;
+ }
+  
