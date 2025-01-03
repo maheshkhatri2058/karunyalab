@@ -38,6 +38,8 @@ const Navbar = () => {
       <div className='flex gap-6 pr-14 py-6 text-xl font-normal max-md:hidden '> 
         <Link to='/' className='hover:text-blue-600 py-2'>HOME</Link>
         <a href='#contact' className='hover:text-blue-600 py-2'>CONTACT</a>
+        <a href='#why' className='hover:text-blue-600 py-2'>WHY US</a>
+
         <a href='#services'  className='hover:text-blue-600 py-2'S>SERVICES</a>
         <button className='btn btn-info text-white text-xl'><a href='https://api.whatsapp.com/send?phone=919995154704'>Book Appointment</a></button>
 
@@ -59,6 +61,11 @@ const Navbar = () => {
         </div>
         <div className='py-2'>
         <a href='#services'  className='hover:text-blue-600 py-2'>SERVICES</a>
+           
+        </div>
+        <div className='py-2'>
+        
+        <a href='#why' className='hover:text-blue-600 py-2'>WHY US</a>
            
         </div>
        </div>

@@ -3,7 +3,9 @@ import 'animate.css';
 import star from '../assets/star.png';
 import Footer from './Footer';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import lnd from '../assets/lnd.png';
 import img1 from '../assets/img1.jpg';
+
 import img2 from '../assets/img2.jpg';
 import img3 from '../assets/img3.jpg';
 import img4 from '../assets/img4.jpg';
@@ -19,6 +21,13 @@ import lab4 from '../assets/lab4.jpg';
 import lab5 from '../assets/lab5.jpg';
 import lab6 from '../assets/lab6.png';
 import shd from '../assets/shedule.jpg';
+import nurse from '../assets/nurse.png';
+import equip  from '../assets/equip.jpg';
+import qlty  from '../assets/qlty.png';
+import assur from '../assets/assur.png';
+import price from '../assets/price.png';
+
+
 
 
 
@@ -49,9 +58,43 @@ const Landing= () => {
         <button className='btn btn-warning text-xl text-white'><a href='https://api.whatsapp.com/send?phone=919995154704'>  <i class="ri-phone-fill px-2 "></i>Book Now</a></button>
       </div>
       <div className='w-1/2 max-md:hidden'>
-      <img src="https://cores.emory.edu/dar/_includes/images/sections/services/diagnostic_lab.png">
+      <img src={lnd}>
       </img>
       </div>
+    </div>
+    {/* gallary sections */}
+    <div className='bg-white max-md:px-2 max-md:py-2'>
+    <Swiper
+        modules={[Autoplay]}
+        className="mySwiper"
+        autoplay={{
+          delay: 2000,
+          disableOnInteraction: false,
+        }}>
+        <SwiperSlide>
+          <div>
+          <div className='relative'>
+            <img src={img1} className=' brightness-100 h-[450px] w-full max-md:h-60'></img>
+            </div>            
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div>
+          <div className='relative'>
+            <img src={img3} className='brightness-100 h-[450px] w-full max-md:h-60'></img>
+            </div>            
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div>
+          <div className='relative'>
+            <img src={img4} className=' brightness-100 h-[450px] w-full max-md:h-60'></img>
+            </div>            
+          </div>
+        </SwiperSlide>
+        
+      </Swiper>
+    
     </div>
     {/* second section */}
     <div className='flex justify-between bg-blue-100 px-20 py-8 gap-12 max-md:flex-col max-md:px-2'>
@@ -127,46 +170,10 @@ const Landing= () => {
      </div>
       
     </div>
-
-   
-    {/* gallary sections */}
-    <div className='bg-white max-md:px-2 max-md:py-2'>
-    <Swiper
-        modules={[Autoplay]}
-        className="mySwiper"
-        autoplay={{
-          delay: 2000,
-          disableOnInteraction: false,
-        }}>
-        <SwiperSlide>
-          <div>
-          <div className='relative'>
-            <img src={img1} className=' brightness-100 h-[450px] w-full max-md:h-60'></img>
-            </div>            
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div>
-          <div className='relative'>
-            <img src={img3} className='brightness-100 h-[450px] w-full max-md:h-60'></img>
-            </div>            
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div>
-          <div className='relative'>
-            <img src={img4} className=' brightness-100 h-[450px] w-full max-md:h-60'></img>
-            </div>            
-          </div>
-        </SwiperSlide>
-        
-      </Swiper>
-    
-    </div>
     {/* services sections */}
-    <div id='services' className='text-black bg-white py-6 max-md:py-4'>
+    <div id='services' className='text-black px-4 bg-white py-6 max-md:py-4'>
       <h2 className='text-center text-3xl py-4 text-blue-600 font-semibold'>Our Services</h2>
-      <div className='flex gap-10 py-4 max-md:flex-col'>
+      <div className='flex gap-10 py-4 px-4 max-md:flex-col'>
         <h2 className='text-5xl w-1/2 px-4 max-md:w-[100%] max-md:px-2 max-md:text-2xl'>Empowering Health Through<br></br>Precision Testing</h2>
        <h2 className='text-xl w-1/2 max-md:w-[100%] max-md:px-2'>
        Behind every test is a life we care deeply about. Trust us to deliver results that matter to you and your loved ones.
@@ -223,6 +230,65 @@ const Landing= () => {
 
       </div>
     </div>
+    {/* why choose us */}
+   <h2 className='text-3xl text-blue-600 text-center font-semibold bg-blue-100' id='why'>Why to Choose Us</h2>
+   <div className='flex px-4 py-4 bg-blue-100 max-md:flex-col max-md:px-2'>
+      <div className='bg-blue-100 px-6 w-1/2 max-md:w-[100%] max-md:px-0'>
+      <h2 className='text-4xl font-semibold p-2 max-md:text-2xl'>Comprehensive Diagnostics<br></br> for Accurate Insights</h2>
+      <div className='bg-blue-600 rounded-full w-96 max-md:hidden'>
+      <img src={nurse} className='h-96'></img>
+
+      </div>
+      </div>
+      <div className=' flex-col justify-center items-center gap-4 py-4 px-4 bg-blue-100'>
+      <div className='flex gap-4 py-4 max-md:flex-col'>
+      <div className='flex justify-center items-center'>
+      <img src={equip} className='w-24 h-24 rounded-full'></img>
+
+      </div>
+      <div>
+      <h2 className='text-2xl font-semibold'>Advanced Medical Equipment</h2>
+      <p className=' text-xl font-serif pr-4'>Karunya Medical Lab is equipped with state-of-the-art diagnostic and testing equipment.</p>
+      </div>
+      </div>
+      <div className='flex gap-4 py-2 max-md:flex-col'>
+      <div className='flex gap-4 py-4 justify-center items-center' >
+        <img src={qlty} className='w-24 h-24 rounded-full'></img>
+      </div>
+      <div>
+      <h2 className='text-2xl font-semibold'>Highly Qualified Professionals</h2>
+      <p className='text-xl font-serif pr-4'> The lab is staffed with experienced and certified medical professionals who ensure accurate results.</p>
+      </div>
+      </div>
+      <div className='flex gap-4 py-2 max-md:flex-col'>
+      <div className='flex gap-4 py-4 justify-center items-center' >
+        <img src={assur} className='w-24 h-24 rounded-full'></img>
+      </div>
+      <div>
+      <h2 className='text-2xl font-semibold'>Top-Level Quality Assurance</h2>
+      <p className='text-xl font-serif pr-4'>KarunyaLab delivers ISO and NABL-certified quality, managed by skilled experts..</p>
+      </div>
+      
+      </div>
+      <div className='flex gap-4 py-2 max-md:flex-col'>
+      <div className='flex gap-4 py-4 justify-center items-center' >
+        <img src={price} className='w-24 h-24 rounded-full'></img>
+      </div>
+      <div>
+      <h2 className='text-2xl font-semibold'>Affordable Services</h2>
+      <p className='text-xl font-serif pr-4'>Competitive pricing for medical tests and services without compromising quality.</p>
+      </div>
+
+    
+      </div>
+
+
+  
+
+      </div>
+
+   </div>
+    
     {/* shedule section */}
     
     <hr class="text-black w-[100%] mx-auto"></hr>
@@ -239,9 +305,7 @@ const Landing= () => {
     </div>
 
     </div>
- 
-
-    
+   
      {/* reviews section */}
      <div className='bg-blue-100'>
      <h2 className='text-3xl text-orange-600 font-bold text-center mx-4 py-14'>Our Client Reviews</h2>
