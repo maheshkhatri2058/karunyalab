@@ -248,7 +248,7 @@ const Landing= () => {
       </div>
       <div>
       <h2 className='text-2xl font-semibold'>Advanced Medical Equipment</h2>
-      <p className=' text-xl font-serif pr-4'>Karunya Medical Lab is equipped with state-of-the-art diagnostic and testing equipment.</p>
+      <p className=' text-xl font-serif'>Karunya Medical Lab is equipped with state-of-the-art diagnostic and testing equipment.</p>
       </div>
       </div>
       <div className='flex gap-4 py-2 max-md:flex-col'>
@@ -257,7 +257,7 @@ const Landing= () => {
       </div>
       <div>
       <h2 className='text-2xl font-semibold'>Highly Qualified Professionals</h2>
-      <p className='text-xl font-serif pr-4'> The lab is staffed with experienced and certified medical professionals who ensure accurate results.</p>
+      <p className='text-xl font-serif '> The lab is staffed with experienced and certified medical professionals who ensure accurate results.</p>
       </div>
       </div>
       <div className='flex gap-4 py-2 max-md:flex-col'>
@@ -266,7 +266,7 @@ const Landing= () => {
       </div>
       <div>
       <h2 className='text-2xl font-semibold'>Top-Level Quality Assurance</h2>
-      <p className='text-xl font-serif pr-4'>KarunyaLab delivers ISO and NABL-certified quality, managed by skilled experts..</p>
+      <p className='text-xl font-serif'>KarunyaLab delivers ISO and NABL-certified quality, managed by skilled experts..</p>
       </div>
       
       </div>
@@ -276,7 +276,7 @@ const Landing= () => {
       </div>
       <div>
       <h2 className='text-2xl font-semibold'>Affordable Services</h2>
-      <p className='text-xl font-serif pr-4'>Competitive pricing for medical tests and services without compromising quality.</p>
+      <p className='text-xl font-serif'>Competitive pricing for medical tests and services without compromising quality.</p>
       </div>
 
     
