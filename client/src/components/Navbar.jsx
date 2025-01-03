@@ -15,12 +15,14 @@ const Navbar = () => {
   return (
     <div>
        {/* na section */}
-      <div className='flex justify-between px-6 py-2 bg-slate-800 relative text-white max-md:hidden'>
+      <div className='flex justify-between px-6 py-2 bg-slate-800 relative text-white'>
       <div className='flex gap-4'>
-        <h1><i className="ri-mail-line"></i>karunyalab@gmail.com</h1>
-        <h2><i className="ri-phone-fill"></i>+91 9995154704/9747054704</h2>
+        <h1 className='max-md:text-[14px]'><i className="ri-mail-line"></i>karunyalab@gmail.com</h1>
+        <h2 className='max-md:hidden'><i className="ri-phone-fill"></i>+91 9995154704/9747054704</h2>
+        <h2  className='hidden max-md:flex text-[14px]'><i className="ri-phone-fill"></i>+91 9995154704</h2>
+
        </div>
-         <div className='flex gap-4'>
+         <div className='flex gap-4 max-md:hidden'>
           <a href='https://api.whatsapp.com/send?phone=919995154704' className='text-2xl'><i class="ri-whatsapp-fill"></i></a>
           <i className="ri-instagram-fill text-2xl"></i>
           <i className="ri-youtube-fill text-2xl"></i>
