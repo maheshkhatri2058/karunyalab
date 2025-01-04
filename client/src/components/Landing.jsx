@@ -48,16 +48,24 @@ import 'swiper/css/navigation';
 // import required modules
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 const Landing= () => {
+  AOS.init(
+    {
+      offset: 200,
+      duration: 400,
+      easing: 'ease-in-sine',
+      delay: 100,
+    }
+  );
   return (
     <div className=' bg-white text-black h-screen'>
     {/* main section */}
     <div className=' flex justify-around gap-4 px-10 pt-14 py-16 bg-blue-100 max-md:flex-col max-md:pt-4 max-md:px-1 max-md:w-[100%]'>
-     <div className='w-1/2 pt-10 max-md:pt-4 max-md:w-[100%] max-md:px-2'>
+     <div data-aos="fade-right" className='w-1/2 pt-10 max-md:pt-4 max-md:w-[100%] max-md:px-2'>
         <h2 className='text-3xl font-bold max-md:text-xl'>Welcome to <span className=' text-orange-600'>  KarunyaLab</span> Best  in the Town</h2>
         <p className='text-xl py-2 max-md:text-[16px]'>A medical laboratory is the backbone of healthcare diagnostics, research, and treatment planning.We are a technology-focused, multi-dimensional pharmaceutical company having state-of-the-art manufacturing capabilities in diverse therapeutic areas such as Cardiology, Diabetology, Pain Management, Dermatology, <span className='max-md:hidden'> It serves as a hub for analyzing biological samples, identifying diseases, and ensuring accurate and timely test results that guide clinical decisions. Medical labs are essential for advancing medical science, developing innovative treatments, and improving patient outcomes.</span></p>
         <button className='btn btn-warning text-xl text-white'><a href='https://api.whatsapp.com/send?phone=919995154704&text=Hello'>  <i class="ri-phone-fill px-2 "></i>Book Now</a></button>
       </div>
-      <div className='w-1/2 max-md:hidden'>
+      <div data-aos="fade-left" className='w-1/2 max-md:hidden'>
       <img src={lnd}>
       </img>
       </div>
@@ -171,7 +179,7 @@ const Landing= () => {
       
     </div>
     {/* services sections */}
-    <div id='services' className='text-black px-4 bg-white py-6 max-md:py-4'>
+    <div data-aos="zoom-in"  id='services' className='text-black px-4 bg-white py-6 max-md:py-4'>
       <h2 className='text-center text-3xl py-4 text-blue-600 font-semibold'>Our Services</h2>
       <div className='flex gap-10 py-4 px-4 max-md:flex-col'>
         <h2 className='text-5xl w-1/2 px-4 max-md:w-[100%] max-md:px-2 max-md:text-2xl'>Empowering Health Through<br></br>Precision Testing</h2>
@@ -233,14 +241,14 @@ const Landing= () => {
     {/* why choose us */}
    <h2 className='text-3xl text-blue-600 text-center font-semibold bg-blue-100' id='why'>Why to Choose Us</h2>
    <div className='flex px-4 py-4 bg-blue-100 max-md:flex-col max-md:px-2'>
-      <div className='bg-blue-100 px-6 w-1/2 max-md:w-[100%] max-md:px-0'>
+      <div data-aos="fade-right" className='bg-blue-100 px-6 w-1/2 max-md:w-[100%] max-md:px-0'>
       <h2 className='text-4xl font-semibold p-2 max-md:text-2xl'>Comprehensive Diagnostics<br></br> for Accurate Insights</h2>
       <div className='bg-blue-600 rounded-full w-96 max-md:hidden'>
       <img src={nurse} className='h-96'></img>
 
       </div>
       </div>
-      <div className=' flex-col justify-center items-center gap-4 py-4 px-4 bg-blue-100'>
+      <div data-aos="fade-left" className=' flex-col justify-center items-center gap-4 py-4 px-4 bg-blue-100'>
       <div className='flex gap-4 py-4 max-md:flex-col'>
       <div className='flex justify-center items-center'>
       <img src={equip} className='w-24 h-24 rounded-full'></img>
@@ -427,7 +435,7 @@ const Landing= () => {
      </div>
      </div>
         {/* contact sections  */}
-    <div className='bg-stone-200 py-4' id='contact'>
+    <div  data-aos="fade-up" className='bg-stone-200 py-4' id='contact'>
        <h2 className='text-center text-3xl font-bold text-orange-700'>You can rich us by following!!</h2>
        <div className='flex justify-around gap-8 h-full  pt-20 max-md:flex-col max-md:gap-2'>
            <div className='max-md:w-80 max-md:px-2'>   
