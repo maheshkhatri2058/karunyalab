@@ -58,18 +58,6 @@ const Landing= () => {
   );
   return (
     <div className=' bg-white text-black h-screen'>
-    {/* main section */}
-    <div className=' flex justify-around gap-4 px-10 pt-14 py-16 bg-blue-100 max-md:flex-col max-md:pt-4 max-md:px-1 max-md:w-[100%]'>
-     <div data-aos="fade-right" className='w-1/2 pt-10 max-md:pt-4 max-md:w-[100%] max-md:px-2'>
-        <h2 className='text-3xl font-bold max-md:text-xl'>Welcome to <span className=' text-orange-600'>  KarunyaLab</span> Best  in the Town</h2>
-        <p className='text-xl py-2 max-md:text-[16px]'>A medical laboratory is the backbone of healthcare diagnostics, research, and treatment planning.We are a technology-focused, multi-dimensional pharmaceutical company having state-of-the-art manufacturing capabilities in diverse therapeutic areas such as Cardiology, Diabetology, Pain Management, Dermatology, <span className='max-md:hidden'> It serves as a hub for analyzing biological samples, identifying diseases, and ensuring accurate and timely test results that guide clinical decisions. Medical labs are essential for advancing medical science, developing innovative treatments, and improving patient outcomes.</span></p>
-        <button className='btn btn-warning text-xl text-white'><a href='https://api.whatsapp.com/send?phone=919995154704&text=Hello'>  <i class="ri-phone-fill px-2 "></i>Book Now</a></button>
-      </div>
-      <div data-aos="fade-left" className='w-1/2 max-md:hidden'>
-      <img src={lnd}>
-      </img>
-      </div>
-    </div>
     {/* gallary sections */}
     <div className='bg-white max-md:px-2 max-md:py-2'>
     <Swiper
@@ -82,14 +70,16 @@ const Landing= () => {
         <SwiperSlide>
           <div>
           <div className='relative'>
-            <img src={img1} className=' brightness-100 h-[450px] w-full max-md:h-60'></img>
+            <img src={img1} className=' brightness-100 w-full h-[450px] max-md:h-60'></img>
+          
             </div>            
           </div>
         </SwiperSlide>
         <SwiperSlide>
           <div>
           <div className='relative'>
-            <img src={img3} className='brightness-100 h-[450px] w-full max-md:h-60'></img>
+            <img src={img3} className='brightness-100 h-[450px]  w-full max-md:h-60'></img>
+
             </div>            
           </div>
         </SwiperSlide>
@@ -104,6 +94,19 @@ const Landing= () => {
       </Swiper>
     
     </div>
+    {/* main section */}
+    <div className=' flex justify-around gap-4 px-10 pt-14 py-16 bg-blue-100 max-md:flex-col max-md:pt-4 max-md:px-1 max-md:w-[100%]'>
+     <div data-aos="fade-right" className='w-1/2 pt-10 max-md:pt-4 max-md:w-[100%] max-md:px-2'>
+        <h2 className='text-3xl font-bold max-md:text-xl'>Welcome to <span className=' text-orange-600'>  KarunyaLab</span> Best  in the Town</h2>
+        <p className='text-xl py-2 max-md:text-[16px]'>A medical laboratory is the backbone of healthcare diagnostics, research, and treatment planning.We are a technology-focused, multi-dimensional pharmaceutical company having state-of-the-art manufacturing capabilities in diverse therapeutic areas such as Cardiology, Diabetology, Pain Management, Dermatology, <span className='max-md:hidden'> It serves as a hub for analyzing biological samples, identifying diseases, and ensuring accurate and timely test results that guide clinical decisions. Medical labs are essential for advancing medical science, developing innovative treatments, and improving patient outcomes.</span></p>
+        <button className='btn btn-warning text-xl text-white'><a href='https://api.whatsapp.com/send?phone=919995154704&text=Hello'>  <i class="ri-phone-fill px-2 "></i>Book Now</a></button>
+      </div>
+      <div data-aos="fade-left" className='w-1/2 max-md:hidden'>
+      <img src={lnd}>
+      </img>
+      </div>
+    </div>
+    
     {/* second section */}
     <div className='flex justify-between bg-blue-100 px-20 py-8 gap-12 max-md:flex-col max-md:px-2'>
     <div className='flex px-8 bg-blue-200 max-md:px-1 max-md:h-[450px] max-md:hidden' id='swip1'>
@@ -205,13 +208,13 @@ const Landing= () => {
        </div>
       </div>
        <div className='flex gap-10 m-4 max-md:flex-col max-md:m-2'>
-       <div className='w-1/2 shadow-xl px-4 h-72 py-8 rounded-2xl border-solid border-2 border-slate-300 max-md:w-[100%]  max-md:h-auto'>
+       <div data-aos="fade-left" className='w-1/2 shadow-xl px-4 h-72 py-8 rounded-2xl border-solid border-2 border-slate-300 max-md:w-[100%]  max-md:h-auto'>
          <h2 className='text-center text-2xl font-semibold  hover:text-blue-600'>Kidney Function Test</h2>
          <div className='flex justify-center items-center'><img src={lab3} className='w-30 h-16 text-center  bg-blue-200 rounded-[50%] inline-block'></img></div>
          <p className='p-4'>Our Kidney Function Test services are designed to assess the health and efficiency of your kidneys. By measuring key markers such as creatinine, blood urea nitrogen (BUN), and glomerular filtration rate (GFR), we can detect early signs of kidney issues like chronic kidney disease or impaired kidney function.</p>
         
        </div>
-       <div className='w-1/2 px-4 shadow-xl h-72 py-4 rounded-2xl border-solid border-2 border-slate-300 max-md:w-[100%]  max-md:h-auto'>
+       <div data-aos="fade-right" className='w-1/2 px-4 shadow-xl h-72 py-4 rounded-2xl border-solid border-2 border-slate-300 max-md:w-[100%]  max-md:h-auto'>
          <h2 className='text-center text-2xl font-semibold hover:text-blue-600'>Vitamin Test</h2>
          <div className='flex justify-center items-center'><img src={lab4} className='w-30 h-16 text-center  bg-blue-200 rounded-[50%] inline-block'></img></div>
          <p className='p-4 py-4'>Our Vitamin Test services provide a detailed analysis of essential vitamins in your body, including Vitamin D, B12, and other important nutrients. These tests help identify deficiencies or imbalances that could affect your overall health, energy levels, and immune function.</p>

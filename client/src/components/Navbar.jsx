@@ -49,7 +49,7 @@ const Navbar = () => {
       <div className='hidden  pt-4 max-md:flex'><button onClick={show}><i className="ri-menu-line text-xl"></i></button></div>
      
     </nav>
-    <div className='hidden max-md:items-center px-[40%] bg-slate-100  absolute left-0 right-0' id='navs'>
+    <div className='hidden max-md:items-center px-[40%] bg-slate-100' id='navs'>
        <div className='mx-auto my-2  text-black'>
        <div className='py-2 px-4'><button onClick={close}><i className="ri-close-large-line"></i></button></div>
        <div className='py-2'>
