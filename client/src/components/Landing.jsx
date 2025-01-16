@@ -5,6 +5,7 @@ import Footer from './Footer';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import lnd from '../assets/lnd.png';
 import img1 from '../assets/img1.jpg';
+import img5 from '../assets/img5.jpg';
 
 import img2 from '../assets/img2.jpg';
 import img3 from '../assets/img3.jpg';
@@ -69,24 +70,38 @@ const Landing= () => {
         }}>
         <SwiperSlide>
           <div>
-          <div className='relative'>
-            <img src={img1} className=' brightness-100 w-full h-[450px] max-md:h-60'></img>
+          <div className='relative px-10 max-md:px-0'>
+            <img src={img2} className=' brightness-100 w-[100%] h-[600px] max-md:h-60 rounded-md'></img>
           
             </div>            
           </div>
         </SwiperSlide>
         <SwiperSlide>
           <div>
-          <div className='relative'>
-            <img src={img3} className='brightness-100 h-[450px]  w-full max-md:h-60'></img>
+          <div className='relative px-10 max-md:px-0'>
+            <img src={img3} className='brightness-100 h-[600px]  w-full max-md:h-60'></img>
 
             </div>            
           </div>
         </SwiperSlide>
         <SwiperSlide>
           <div>
-          <div className='relative'>
-            <img src={img4} className=' brightness-100 h-[450px] w-full max-md:h-60'></img>
+          <div className='relative px-10 max-md:px-0'>
+            <img src={img4} className=' brightness-100 h-[600px] w-full max-md:h-60'></img>
+            </div>            
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div>
+          <div className='relative px-10 max-md:px-0'>
+            <img src={img1} className=' brightness-100 h-[600px] w-full max-md:h-60'></img>
+            </div>            
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div>
+          <div className='relative px-10 max-md:px-0'>
+            <img src={img5} className=' brightness-100 h-[600px] w-full max-md:h-60'></img>
             </div>            
           </div>
         </SwiperSlide>
@@ -99,7 +114,7 @@ const Landing= () => {
      <div data-aos="fade-right" className='w-1/2 pt-10 max-md:pt-4 max-md:w-[100%] max-md:px-2'>
         <h2 className='text-3xl font-bold max-md:text-xl'>Welcome to <span className=' text-orange-600'>  KarunyaLab</span> Best  in the Town</h2>
         <p className='text-xl py-2 max-md:text-[16px]'>A medical laboratory is the backbone of healthcare diagnostics, research, and treatment planning.We are a technology-focused, multi-dimensional pharmaceutical company having state-of-the-art manufacturing capabilities in diverse therapeutic areas such as Cardiology, Diabetology, Pain Management, Dermatology, <span className='max-md:hidden'> It serves as a hub for analyzing biological samples, identifying diseases, and ensuring accurate and timely test results that guide clinical decisions. Medical labs are essential for advancing medical science, developing innovative treatments, and improving patient outcomes.</span></p>
-        <button className='btn btn-warning text-xl text-white'><a href='https://api.whatsapp.com/send?phone=919995154704&text=Hello'>  <i class="ri-phone-fill px-2 "></i>Book Now</a></button>
+        <button className='btn btn-warning text-xl text-white'><a href='https://api.whatsapp.com/send?phone=919995154704'>  <i class="ri-phone-fill px-2 "></i>Book Now</a></button>
       </div>
       <div data-aos="fade-left" className='w-1/2 max-md:hidden'>
       <img src={lnd}>
@@ -310,7 +325,7 @@ const Landing= () => {
     </div>
     <div className=' flex py-6 max-md:py-0  max-md:justify-center'>
     <button className='btn btn-info text-white text-xl'>
-    <a href='https://api.whatsapp.com/send?phone=919995154704&text=Hello'>  <i class="ri-phone-fill px-2 "></i>Book an Appointment</a>
+    <a href='https://api.whatsapp.com/send?phone=919995154704'>  <i class="ri-phone-fill px-2 "></i>Book an Appointment</a>
     </button>
      
     </div>

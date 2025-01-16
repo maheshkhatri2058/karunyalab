@@ -23,7 +23,7 @@ const Navbar = () => {
 
        </div>
          <div className='flex gap-4 max-md:hidden'>
-          <a href='https://api.whatsapp.com/send?phone=919995154704&text=Hello' className='text-2xl'><i class="ri-whatsapp-fill"></i></a>
+          <a href='https://api.whatsapp.com/send?phone=919995154704' className='text-2xl'><i class="ri-whatsapp-fill"></i></a>
           <i className="ri-instagram-fill text-2xl"></i>
           <i className="ri-youtube-fill text-2xl"></i>
           <i className="ri-twitter-x-line text-2xl"></i>
@@ -41,7 +41,7 @@ const Navbar = () => {
         <a href='#why' className='hover:text-blue-600 py-2'>WHY US</a>
 
         <a href='#services'  className='hover:text-blue-600 py-2'S>SERVICES</a>
-        <button className='btn btn-info text-white text-xl'><a href='https://api.whatsapp.com/send?phone=919995154704&text=Hello'>Book Appointment</a></button>
+        <button className='btn btn-info text-white text-xl'><a href='https://api.whatsapp.com/send?phone=919995154704'>Book Appointment</a></button>
 
 
 
