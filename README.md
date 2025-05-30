@@ -1,4 +1,4 @@
-# 🧪 Karunya Lab – Chemistry Lab Web Portal
+# 🧪 Karunya Lab – 
 
 A responsive and modern website for **Karunya Chemistry Lab**, built using **React.js** and **Tailwind CSS**. This web portal serves as a digital entry point for students and educators to explore lab experiments, safety protocols, equipment details, and lab manuals in a structured and accessible format.
 
