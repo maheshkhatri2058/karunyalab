@@ -1,16 +1,16 @@
-# 🧪 Karunya Lab – 
+# 🧬 Karunya Health Lab – Medical Lab Website
 
-A responsive and modern website for **Karunya Chemistry Lab**, built using **React.js** and **Tailwind CSS**. This web portal serves as a digital entry point for students and educators to explore lab experiments, safety protocols, equipment details, and lab manuals in a structured and accessible format.
+A modern and responsive website for **Karunya Health Lab**, designed to showcase healthcare laboratory services, diagnostic tests, and wellness initiatives. Built with **React.js** and **Tailwind CSS**, this website aims to provide patients and professionals with essential information in a clean and accessible format.
 
 ---
 
 ## 🚀 Features
 
-- 🧫 Overview of lab facilities and chemistry experiments
-- 📘 Downloadable manuals and learning resources
-- 📱 Mobile-friendly layout with Tailwind CSS
-- 📷 Visuals and icons representing lab equipment and materials
-- 🌐 Easy navigation between sections using scroll-based UI
+- 🧪 Overview of lab testing services and diagnostics
+- 🩺 Sections for health checks, test packages, and lab features
+- 📱 Fully responsive design using Tailwind CSS
+- 🧭 Smooth navigation with modern layout and icons
+- 🖼️ Visual representation of healthcare themes and services
 
 ---
 
@@ -24,5 +24,4 @@ A responsive and modern website for **Karunya Chemistry Lab**, built using **Rea
 ## 🌐 Live Demo
 
 🔗 [Visit Website](https://karunyalab.vercel.app)
-
 
